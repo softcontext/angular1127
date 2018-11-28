@@ -1,0 +1,16 @@
+<h2>home.component, {{title}}</h2>
+<p [innerText]="title"></p>
+<p [innerHTML]="title"></p>
+<p>{{title}}</p>
+<input type="text" name="" value="title"><br>
+<input type="text" name="" value="{{title}}"><br>
+<input type="text" name="" value="{{'title'}}"><br>
+<input type="text" name="" [value]="title"><br>
+<input type="text" name="" [(ngModel)]="title"><br>
+<!--
+  [] : Property Binding : 클래스 ==> HTML
+  {{}} : [] 방식의 또 하나의 다른 방법
+  () : Event Binding : HTML ==> 클래스
+  [(ngModel)] : 양방향 바인딩
+ -->
+<button type="button" (click)="update()">Update</button>

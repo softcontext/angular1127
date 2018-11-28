@@ -1,0 +1,22 @@
+<p>count: {{emps.length}}</p>
+<!-- table>tr*3>td*3 -->
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr *ngFor="let emp of emps">
+    <td>{{emp.id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.age}}</td>
+  </tr>
+</table>
+<hr>
+<child *ngFor="let emp of emps" [e]="emp" [parent]="this" (selectedId)="popup($event)"></child>
+<hr>
+<ul *ngIf="selectedEmp">
+  <li>{{selectedEmp.id}}</li>
+  <li>{{selectedEmp.name}}</li>
+  <li>{{selectedEmp.age}}</li>
+</ul>
