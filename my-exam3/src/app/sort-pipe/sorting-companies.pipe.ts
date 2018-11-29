@@ -12,10 +12,16 @@ export class SortingCompaniesPipe implements PipeTransform {
     if (!companies || !path || !order) return companies;
 
     return companies.sort((a: Company, b: Company) => {
+      // {'A', 'aa', {country: 'Korea', cash: 100}}
+      // {'B', 'bb', {country: 'Japan', cash: 300}}
+
+      // ['company']
+      // ['info','cash']
+
       // We go for each property followed by path
       path.forEach(property => {
-        a = a[property];
-        b = b[property];
+        a = a[property]; // a.info.cash
+        b = b[property]; // b.info.cash
       })
       console.log(a, b);
 

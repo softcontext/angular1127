@@ -7,6 +7,7 @@ import { SelectSampleComponent } from './select-sample/select-sample.component';
 import { NgclassSampleComponent } from './ngclass-sample/ngclass-sample.component';
 import { BuiltInPipeComponent } from './built-in-pipe/built-in-pipe.component';
 import { SortPipeComponent } from './sort-pipe/sort-pipe.component';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'ngclass-sample', component: NgclassSampleComponent },
   { path: 'built-in-pipe', component: BuiltInPipeComponent },
   { path: 'sort-pipe', component: SortPipeComponent },
+  { path: 'custom-directive', component: CustomDirectiveComponent },
   { path: '**', component: HomeComponent }
 ];
 

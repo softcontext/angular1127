@@ -17,6 +17,9 @@ import { NgclassSampleComponent } from './ngclass-sample/ngclass-sample.componen
 import { BuiltInPipeComponent } from './built-in-pipe/built-in-pipe.component';
 import { SortPipeComponent } from './sort-pipe/sort-pipe.component';
 import { SortingCompaniesPipe } from './sort-pipe/sorting-companies.pipe';
+import { MyDatePipe } from './sort-pipe/my-date.pipe';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+import { HightlightDirective } from './custom-directive/hightlight.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { SortingCompaniesPipe } from './sort-pipe/sorting-companies.pipe';
     NgclassSampleComponent,
     BuiltInPipeComponent,
     SortPipeComponent,
-    SortingCompaniesPipe
+    SortingCompaniesPipe,
+    MyDatePipe,
+    CustomDirectiveComponent,
+    HightlightDirective
   ],
   imports: [
     BrowserModule, HttpModule, FormsModule,

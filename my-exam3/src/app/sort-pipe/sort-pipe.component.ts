@@ -23,8 +23,10 @@ export class SortPipeComponent implements OnInit {
     new Company('B', 'bb', {country: 'Japan', cash: 300}),
     new Company('C', 'cc', {country: 'USA', cash: 200}),
   ];
-  path: string[] = ['company'];
+  path: string[] = ['company']; // 정렬기준
   order: number = 1; // 1 asc, -1 desc;
+
+  strDate: string = '20181225';
 
   constructor() { }
 

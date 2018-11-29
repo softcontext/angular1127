@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "CC1",
+      "lastName": "ccc"
+    },
+    {
+      "id": 2,
+      "firstName": "CC2",
+      "lastName": "ccc"
+    },
+    {
+      "id": 3,
+      "firstName": "CC3",
+      "lastName": "ccc"
+    },
+    {
+      "firstName": "11",
+      "lastName": "22",
+      "id": 6
+    },
+    {
+      "firstName": "33",
+      "lastName": "44",
+      "id": 7
+    }
+  ]
+}
