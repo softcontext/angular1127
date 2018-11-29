@@ -11,9 +11,9 @@ export class BridgeService {
     this.subject.next({ text: message });
   }
 
-  // clearMessage() {
-  //   this.subject.next();
-  // }
+  clearMessage() {
+    this.subject.next();
+  }
 
   observe(): Observable<any> {
     return this.subject.asObservable();

@@ -20,4 +20,8 @@ export class ControlComponent implements OnInit {
   minus() {
     this.bridgeService.sendMessage('minus');
   }
+
+  zero() {
+    this.bridgeService.clearMessage();
+  }
 }

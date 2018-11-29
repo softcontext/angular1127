@@ -1,0 +1,25 @@
+<div class="bs-example">
+  <ul class="nav nav-pills">
+    <li routerLinkActive="active"><a routerLink="home" >Home</a></li>
+    <li routerLinkActive="active"><a routerLink="profile" >Profile</a></li>
+    <li routerLinkActive="active"><a routerLink="elem-ref" >Elem-Ref</a></li>
+    <li routerLinkActive="active"><a routerLink="select-sample" >Select-Sample</a></li>
+    <li routerLinkActive="active" class="dropdown">
+      <a routerLink="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="ngclass-sample">ngClass Sample</a></li>
+        <li><a routerLink="built-in-pipe">Built in Pipes</a></li>
+        <li><a routerLink="sort-pipe">Sort Pipe</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">Drafts</a></li>
+        <li><a href="#">Sent Items</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Trash</a></li>
+      </ul>
+    </li>
+  </ul>
+  <hr />
+  <div class="margin">
+    <router-outlet></router-outlet>
+  </div>
+</div>
