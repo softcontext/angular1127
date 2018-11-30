@@ -16,9 +16,27 @@ ng g c login
 
 ng g s service/login
 
+ng g g guard/ContactCanDeactivate
+
 ### Nested Component Routing
 
+ng g c parent
+ng g c parent/child1
+ng g c parent/child2
+ng g c parent/child3
+
+ng g g guard/CanActivateChild
+
 ### Lazy Loading Module
+
+처리가 오래걸리는 무거운 모듈은 사용자가 요청할 때 객체를 생성하고자 한다.
+ng g m heavy
+ng g c heavy1 --module=heavy
+ng g c heavy/heavy2 --module=heavy
+
+루트 모듈에서 imports 항목에 모듈을 설정하면 EAGER 로딩방식이다.
+
+ng g g guard/my-can-load
 
 ### Guard
 * resolve

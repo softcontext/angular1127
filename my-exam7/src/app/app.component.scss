@@ -1,0 +1,27 @@
+h2 {
+  color: yellow;
+}
+
+/* :host 컴포넌트의 셀렉터 태그를 가리키는 예약어 */
+:host {
+  display: block;
+  padding: 10px;
+  background-color: white;
+}
+/*
+기본적으로 CSS는 해당 컴포넌트 템플릿에만 영향을 줍니다.
+deep은 자식 컴포넌트에도 CSS 스타일을 적용합니다.
+*/
+:host /deep/ div.this-is-valid {
+  padding: 10px;
+  color: blue;
+}
+
+:host /deep/ div.this-is-invalid {
+  padding: 10px;
+  color: red;
+}
+
+a {
+  margin-right: 10px;
+}

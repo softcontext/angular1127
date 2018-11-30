@@ -8,6 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { DataComponent } from './data/data.component';
 import { LoginComponent } from './login/login.component';
+import { ParentComponent } from './parent/parent.component';
+import { Child1Component } from './parent/child1/child1.component';
+import { Child2Component } from './parent/child2/child2.component';
+import { Child3Component } from './parent/child3/child3.component';
+
+import { HeavyModule } from './heavy/heavy.module';
 
 @NgModule({
   declarations: [
@@ -15,14 +21,23 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     ContactComponent,
     DataComponent,
-    LoginComponent
+    LoginComponent,
+    ParentComponent,
+    Child1Component,
+    Child2Component,
+    Child3Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // HeavyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    console.log('AppModule() called.');
+  }
+}

@@ -7,7 +7,18 @@
       <li><a routerLink="data/7">data/7</a></li>
       <li><a routerLink="data/9">data/9</a></li>
       <li><a [routerLink]="['login']">login</a></li>
+      <li><a routerLink="parent">parent</a></li>
+      <li><a [routerLink]="['parent','child1']">parent/child1</a></li>
+      <li><a routerLink="parent/child2">parent/child2</a></li>
+      <li><a routerLink="parent/child3">parent/child3</a></li>
+      <li><a routerLink="heavy/heavy1">heavy/heavy1</a></li>
+      <li><a routerLink="heavy">heavy</a></li>
+      <li><a routerLink="heavy/heavy2">heavy/heavy2</a></li>
     </ul>
   </nav>
-  <router-outlet></router-outlet>
+  <div class="box">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+
+<!-- <app-heavy1></app-heavy1> -->

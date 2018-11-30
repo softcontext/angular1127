@@ -2,3 +2,8 @@ ul li {
   display: inline-block;
   margin-right: 10px;
 }
+
+/deep/ .box {
+  border: 1px solid gray;
+  padding: 5px;
+}
