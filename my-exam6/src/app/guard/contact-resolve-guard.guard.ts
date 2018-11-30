@@ -33,7 +33,7 @@ export class ContactResolveGuard implements Resolve<Contact> {
       name: 'Gildong Hong',
       phone: '01012345678',
       website: 'http://www.google.com',
-    }).pipe(delay(3000));
+    }).pipe(delay(1000));
   }
 
 }
