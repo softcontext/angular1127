@@ -12,6 +12,7 @@ export class GoodHttpService {
   findAll() {
     return axios.get(this.URL)
       .then(function(response) { // handle success
+        console.log(response);
         return response.data;
       });
   }
@@ -24,16 +25,26 @@ export class GoodHttpService {
   }
 
   addOne(emp) {
+    // {
+    //   "firstName": "333",
+    //   "lastName": "444",
+    // }
     return axios.post(this.URL, emp)
       .then(function (response) {
         console.log(response);
         return response.data;
       });
+    // {
+    //   "firstName": "333",
+    //   "lastName": "444",
+    //   "id": 5
+    // }
   }
 
   deleteOne(id) {
     return axios.delete(this.URL + '/' + id)
-      .then(function(response) { // handle success
+      .then(function(response) { // handle success]
+        console.log(response);
         return true;
       });
   }

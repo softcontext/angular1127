@@ -1,3 +1,6 @@
+<div class="">
+  {{errorMessage}}
+</div>
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -21,9 +24,12 @@
     <tr>
       <td></td>
       <td></td>
-      <td><input #firstName type="text" name="firstName" size="5"></td>
-      <td><input #lastName type="text" name="lastName" size="5"></td>
+      <td><input #firstName type="text" name="firstName" size="5" [(ngModel)]="emp.firstName"></td>
+      <td><input #lastName type="text" name="lastName" size="5" [(ngModel)]="emp.lastName"></td>
       <td><button type="button" (click)="addOne(firstName.value, lastName.value)">등록</button></td>
     </tr>
   </tfoot>
 </table>
+<button type="button" (click)="test(firstName)">엘리먼트 참조 넘기기</button>
+<pre>{{emp | json}}</pre>
+<button type="button" (click)="test2()">등록 처리 2</button>
